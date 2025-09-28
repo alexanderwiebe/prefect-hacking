@@ -3,6 +3,13 @@
   "build": {
     "dockerfile": "../Dockerfile"
   },
+  "containerEnv": {
+    "PREFECT_API_URL": "http://host.docker.internal:4200/api",
+    "PREFECT_API_ENABLE_EPHEMERAL_SERVER": "false"
+  },
+  "runArgs": [
+    "--add-host=host.docker.internal:host-gateway"  // needed on Linux
+  ],
   "customizations": {
     "vscode": {
       "extensions": [
