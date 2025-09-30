@@ -3,3 +3,4 @@ python-dotenv
 prefect
 nbconvert
 atlassian-python-api
+slack-sdk
